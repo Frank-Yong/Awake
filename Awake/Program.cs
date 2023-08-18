@@ -14,7 +14,7 @@ namespace Awake
         [STAThread]
         static void Main()
         {
-            PowerHelper.ForceSystemAwake();
+            NativeMethods.ForceSystemAwake();
             Application.Run();
         }
     }

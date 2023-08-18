@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E113DDA8-F391-45CC-9B0E-19B6CE5CEC12}</ProjectGuid>
+    <ProjectGuid>{B0D9B54F-2DC4-4F0A-9213-4B47E4886601}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Awake</RootNamespace>
-    <AssemblyName>Awake</AssemblyName>
+    <RootNamespace>AwakeGUI</RootNamespace>
+    <AssemblyName>AwakeGUI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -69,7 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NativeMethods.cs" />
+    <Compile Include="wndAwake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wndAwake.Designer.cs">
+      <DependentUpon>wndAwake.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -81,6 +86,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="wndAwake.resx">
+      <DependentUpon>wndAwake.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Awake\Awake.csproj">
+      <Project>{e113dda8-f391-45cc-9b0e-19b6ce5cec12}</Project>
+      <Name>Awake</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Iconsmind-Outline-Coffee.ico" />

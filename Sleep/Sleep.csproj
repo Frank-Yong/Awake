@@ -91,9 +91,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PowerHelper\PowerHelper.csproj">
-      <Project>{a362cb96-f5a5-4f3b-b43d-bbf27dde2d80}</Project>
-      <Name>PowerHelper</Name>
+    <ProjectReference Include="..\Awake\Awake.csproj">
+      <Project>{e113dda8-f391-45cc-9b0e-19b6ce5cec12}</Project>
+      <Name>Awake</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
