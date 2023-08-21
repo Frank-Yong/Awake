@@ -53,6 +53,9 @@ namespace AwakeGUI
         {
             bool awake = NativeMethods.GetAwakeState();
             this.niCoffee.Text = awake ? "Awake" : "Sleep";
+            this.niCoffee.Icon = awake 
+                ? Properties.Resources.Iconsmind_Outline_Coffee 
+                : Properties.Resources.Pictogrammers_Material_Light_Sleep;
         }
 
         private void niCoffee_MouseClick(object sender, MouseEventArgs e)

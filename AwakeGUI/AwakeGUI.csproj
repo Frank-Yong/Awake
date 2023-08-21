@@ -85,6 +85,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="wndAwake.resx">
       <DependentUpon>wndAwake.cs</DependentUpon>
@@ -110,6 +111,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Iconsmind-Outline-Coffee.ico" />
+    <None Include="Resources\Pictogrammers-Material-Light-Sleep.ico" />
+    <None Include="Resources\Iconsmind-Outline-Coffee.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

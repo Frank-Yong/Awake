@@ -35,6 +35,7 @@
             this.awakeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sleepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.niImages = new System.Windows.Forms.ImageList(this.components);
             this.mnuNotifyIcon.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +78,13 @@
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
+            // niImages
+            // 
+            this.niImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("niImages.ImageStream")));
+            this.niImages.TransparentColor = System.Drawing.Color.Transparent;
+            this.niImages.Images.SetKeyName(0, "Iconsmind-Outline-Coffee.ico");
+            this.niImages.Images.SetKeyName(1, "Pictogrammers-Material-Light-Sleep.ico");
+            // 
             // wndAwake
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,6 +108,7 @@
         private System.Windows.Forms.ToolStripMenuItem awakeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sleepToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
+        private System.Windows.Forms.ImageList niImages;
     }
 }
 
