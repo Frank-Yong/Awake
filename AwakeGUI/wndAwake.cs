@@ -46,6 +46,7 @@ namespace AwakeGUI
         private void wndAwake_Load(object sender, EventArgs e)
         {
             this.Visible = false;
+            NativeMethods.ForceSystemAwake();
             SetNotifyIcon();
         }
 
